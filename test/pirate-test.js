@@ -3,16 +3,16 @@ var Pirate = require('../exercises/pirate');
 
 describe('Pirate', function () {
 
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     assert.isFunction(Pirate);
   });
 
-  it.skip('should instantiate our good friend, Pirate', function () {
+  it('should instantiate our good friend, Pirate', function () {
     var pirate = new Pirate();
     assert.isObject(pirate);
   });
 
-  it.skip('should have a name', function()  {
+  it('should have a name', function()  {
     var pirate = new Pirate('Blackbeard');
     assert.equal(pirate.name, 'Blackbeard');
   });
