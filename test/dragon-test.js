@@ -36,8 +36,10 @@ describe('Dragon', function () {
     var dragon = new Dragon('Lady Vox');
 
     assert.equal(dragon.hungry, true);
+
     dragon.eat();
     assert.equal(dragon.hungry, true);
+
     dragon.eat();
     assert.equal(dragon.hungry, true);
 

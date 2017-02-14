@@ -4,9 +4,16 @@ function Unicorn(name, color = 'white') {
 }
 
 Unicorn.prototype.isWhite = function() {
-  return this.color === 'white';
-};
 
+  return this.color === 'white';
+
+  // if (this.color === 'white') {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+};
+//
 Unicorn.prototype.says = function(words) {
   return '**;* ' + words + ' *;**';
 };
