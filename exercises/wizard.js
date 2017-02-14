@@ -19,17 +19,14 @@ Wizard.prototype.incantation = function(spell) {
 }
 
 Wizard.prototype.cast = function() {
-  if (this.spells > 3){
-    this.isRested = false;
-    console.log('so tired!');
-    return 'I SHALL NOT CAST!';
-  }
-   else {
-    this.spells++
-    console.log(this.spells);
+  this.spells++
+  if (this.spells < 3) {
     return 'MAGIC BULLET';
   }
-
+  else {
+    this.isRested = false;
+    return 'I SHALL NOT CAST!';
+  }
 }
 
 module.exports = Wizard;
