@@ -13,7 +13,7 @@ Unicorn.prototype.isWhite = function() {
   //   return false;
   // }
 };
-//
+
 Unicorn.prototype.says = function(words) {
   return '**;* ' + words + ' *;**';
 };
