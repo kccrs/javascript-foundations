@@ -10,13 +10,13 @@ describe('TrickOrTreater', function () {
     assert.isFunction(TrickOrTreater);
   });
 
-  it.skip('should wear a costume', function () {
+  it('should wear a costume', function () {
     costume = new Costume('Cowboy');
     trickOrTreater = new TrickOrTreater(costume);
     assert.equal(trickOrTreater.dressedUpAs, 'Cowboy');
   });
 
-  it.skip('should wear a different costume', function () {
+  it('should wear a different costume', function () {
     costume = new Costume('Cowboy');
     trickOrTreater = new TrickOrTreater(costume);
     assert.equal(trickOrTreater.dressedUpAs, 'Cowboy');
