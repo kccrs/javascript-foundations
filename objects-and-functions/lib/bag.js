@@ -12,10 +12,10 @@ Bag.prototype.push = function(candy) {
 }
 
 Bag.prototype.contains = function(type) {
-  console.log(type);
-  console.log(candy);
-  console.log(this.candies);
-  this.candies.includes(candy.type);
+  let val = this.candies.filter(function (candy) {
+    return candy['type'] === type;
+  });
+  return val.length > 0;
 }
 
 module.exports = Bag;
