@@ -26,23 +26,23 @@ describe('Bag', function () {
   it('should put candy in the bag', function () {
     bag = new Bag();
     candy = new Candy('Swedish Fish');
-    bag.push(candy);
+    bag.add(candy);
     assert.deepEqual(bag.candies, [candy]);
   });
 
   it('should count the candies in the bag', function() {
     bag = new Bag();
     candy = new Candy('Turkish Delight');
-    bag.push(candy);
+    bag.add(candy);
     assert.equal(bag.count, 1);
-    bag.push(candy);
+    bag.add(candy);
     assert.equal(bag.count, 2);
   });
 
   it('should contain candies and candies should have a type', function () {
     bag = new Bag();
     candy = new Candy('Hershey\'s Kisses');
-    bag.push(candy);
+    bag.add(candy);
     type = bag.candies[0].type;
     assert.equal(type, 'Hershey\'s Kisses');
   });
@@ -50,7 +50,7 @@ describe('Bag', function () {
   it('should contain a particular type of candy', function () {
     bag = new Bag();
     candy = new Candy('Lindt Chocolate');
-    bag.push(candy);
+    bag.add(candy);
     assert.equal(bag.contains('Lindt Chocolate'), true);
     assert.equal(bag.contains('Kit Kat'), false);
   });

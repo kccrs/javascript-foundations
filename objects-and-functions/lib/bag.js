@@ -1,4 +1,4 @@
-var Candy = require('../lib/candy');
+// var Candy = require('../lib/candy');
 
 function Bag() {
   this.empty = true;
@@ -6,9 +6,10 @@ function Bag() {
   this.candies = [];
 };
 
-Bag.prototype.push = function(candy) {
+Bag.prototype.add = function(candy) {
   this.candies.push(candy);
   this.count += 1;
+  this.empty = false;
 }
 
 Bag.prototype.contains = function(type) {
